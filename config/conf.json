@@ -1,0 +1,14 @@
+{
+  "app_port": "9095",
+  "app_name": "bmg",
+  "db": {
+    "host": "172.27.5.212",
+    "port": "1433",
+    "user": "backuser2",
+    "pass": "masterkey",
+    "name": "CigSuite_v3",
+    "idle_conns": 10,
+    "open_conns": 10,
+    "driver_name": "sqlserver"
+  }
+}

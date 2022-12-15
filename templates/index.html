@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>documents</title>
+</head>
+<body>
+<table>
+    <thead><th>Id</th><th>Message</th><th>Date</th><th>Done</th></thead>
+    {{range . }}
+    <tr>
+        <td>{{.Id}}</td>
+        <td>{{.Message}}</td>
+        <td>{{.Date}}</td>
+        <td>{{.Done}}</td>
+    </tr>
+    {{end}}
+</table>
+</body>
+</html>

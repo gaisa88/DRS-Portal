@@ -1,0 +1,68 @@
+{
+  "app_port": "9095",
+  "app_name": "bmg",
+  "sign": {
+    "port_url": "https://sd.1cb.kz/HSM/signAPP"
+  },
+  "vshep": {
+    "url": "http://172.27.5.146:81/bip-sync-wss-gost/",
+    "service_id": "VERIFYPHONE_SERVICE",
+    "sender": {
+      "sender_id": "pcb",
+      "password": "pcb"
+    },
+    "check_response": {
+      "code": "1",
+      "check_message": true,
+      "message": "success"
+    }
+  },
+  "profile": {
+    "service_url": "https://profileholder-staging.1cb.kz",
+    "get_me_url": "/v1/profiles/me"
+  },
+  "auth": {
+    "service_url": "https://auth2-staging.1cb.kz",
+    "check_method_url": "/v1/check",
+    "client_check_method_url":"not used",
+    "is_valid_method_url": "/v1/isvalid",
+    "login_method_url": "/v1/login",
+    "refresh_method_url": "/v1/refresh",
+    "client_change_pass_url": "/v1/changePass",
+    "client_name": "bmg_client3",
+    "client_secret": "bmg_client3",
+    "zone_name": "bmg"
+  },
+  "sender_scope": {
+    "area": "bmg",
+    "topic": "service",
+    "operation": "send"
+  },
+  "client_scope": {
+    "area": "bmg",
+    "topic": "client",
+    "operation": "receive"
+  },
+  "billing": {
+    "service_url": "https://billing-acquisition-staging.1cb.kz",
+    "bill_method_url": "/v1/billing",
+    "pre_bill_method_url": "/v1/pre/billing",
+    "post_bill_method_url": "/v1/post/billing",
+    "product_id": 49
+  },
+  "db": {
+    "host": "172.27.5.212",
+    "port": "1433",
+    "user": "backuser2",
+    "pass": "masterkey",
+    "name": "ExtendedProducts",
+    "idle_conns": 10,
+    "open_conns": 10,
+    "driver_name": "sqlserver"
+  },
+
+  "redis": {
+    "hosts" : ["172.27.5.103:26379", "172.27.5.104:26379", "172.27.5.105:26379"],
+    "pass" : "2ad6C44%x"
+  }
+}
